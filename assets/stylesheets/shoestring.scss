@@ -14,20 +14,29 @@ body {
   }
 }
 
-// $columns: col-lg !default
+
+// Functioning CSS for Part 1
 
 @for $i from 1 through 12 {
   .col-lg-#{$i} {
     width: 100%*($i/12);
-    margin: 0 auto;
+    float: left;
+    @media (max-width: 1000px) {
+    col-lg-4 {
+        float: none;
+    }
+} 
+  }
+  .col-md-#{$i} {
+    width: 100%*($i/12);
+    float: left;
+  }
+  .col-xs-#{i} {
+    width: 100%*($i/12);
+    float: left;
   }
 }
 
-.col-lg-4 {
-    width: 33%;
-    float: left;
-    margin: 0 auto;
-  }
 
 
 .container {
@@ -36,16 +45,24 @@ body {
   clear: both;
 }
 
+.container {
+  margin: 0 auto;
+  // max-width: 48rem;
+  width: 90%;
+}
+
+.container:before, .container:after {
+  clear: both;
+  display: block;
+  content: '';
+}
+
 .row {
   clear: both;
-  margin: 0 auto;
+  text-align: center;
 }
 
 .section-colored{
   clear:both;
 }
-
-// .col-lg-12 { 
-//   width: 100%;
-// }
 

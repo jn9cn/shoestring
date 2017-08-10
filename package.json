@@ -5,12 +5,12 @@
   "scripts": {
     "start": "nodemon -e js,css,scss,html app.js",
     "build-css": "node-sass -w assets/stylesheets/shoestring.scss -o public/stylesheets"
-    
   },
   "dependencies": {
     "express": "~3.4.8",
     "node-sass": "^4.5.3",
     "nodemon": "^1.9.2",
+    "normalize.css": "^7.0.0",
     "nunjucks": "^3.0.0"
   }
 }
