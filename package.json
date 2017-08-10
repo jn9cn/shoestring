@@ -5,6 +5,7 @@
   "scripts": {
     "start": "nodemon -e js,css,scss,html app.js",
     "build-css": "node-sass -w assets/stylesheets/shoestring.scss -o public/stylesheets"
+    
   },
   "dependencies": {
     "express": "~3.4.8",
